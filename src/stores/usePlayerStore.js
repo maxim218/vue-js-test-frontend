@@ -4,6 +4,8 @@ import { defineStore } from "pinia";
 
 export const usePlayerStore = defineStore('player', {
     state: () => ({ 
+        xNum: 100,
+        sString: 'Programming',
         coins: 0, 
         firstname: "", 
         lastname: "" 

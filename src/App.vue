@@ -10,6 +10,21 @@
   
   // init
   const playerStore = usePlayerStore();
+  
+  console.log('==============================================');
+  console.log(playerStore.xNum); // 100
+  playerStore.xNum = 218;
+  console.log(playerStore.xNum); // 218
+  playerStore.xNum += 82;
+  console.log(playerStore.xNum); // 300
+  console.log('==============================================');
+  console.log(playerStore.sString);  // Programming
+  playerStore.sString = 'Hello ';
+  console.log(playerStore.sString);  // Hello
+  playerStore.sString += 'world';
+  console.log(playerStore.sString);  // Hello world
+  console.log('==============================================');
+  
   // set
   playerStore.setFirstname('George');
   playerStore.setLastname('Georgievashvivli');
